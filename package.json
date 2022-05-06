@@ -5,5 +5,23 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.0"
-  }
+  },
+  "name": "express-events-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekyahmed/express-events-api.git"
+  },
+  "author": "Bankole Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geekyahmed/express-events-api/issues"
+  },
+  "homepage": "https://github.com/geekyahmed/express-events-api#readme",
+  "description": ""
 }
