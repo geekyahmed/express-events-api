@@ -1,8 +1,8 @@
 import express from 'express'
-import connectDevDB from '../config/db.js'
+import { connectDevDB } from '../config/db.js'
 const app = express()
 
-class DatabaseLoader {
+export default class DatabaseLoader {
     loadDatabase() {
         //Configure Environments
         switch (app.get('env')) {
@@ -21,4 +21,3 @@ class DatabaseLoader {
     }
 }
 
-module.exports = DatabaseLoader

@@ -1,6 +1,6 @@
-import ExpressApp from './api/loaders/index.js'
+import ExpressApp from './api/loaders/express.js'
 import express from 'express'
-import routes from './api/routes/routes.js'
+// import routes from './api/routes/routes.js'
 import dotenv from 'dotenv'
 
 dotenv.config({ path: '.env' })
@@ -17,9 +17,7 @@ async function runServer() {
 
     app.disable('x-powered-by') // OWASP recommendation, kind of redundant as helmet should be setting this anyway
 
-    routes(app)
-
-
+    // routes(app)
     await loader.loadServer()
 
     app.listen(process.env.PORT || 5000, err => {

@@ -2,11 +2,10 @@ import DatabaseLoader from './mongoose.js'
 
 const DatabaseInstance = new DatabaseLoader()
 
-class ExpressApp {
-  async loadServer() {
-    await DatabaseInstance.loadDatabase()
-    logger.simple.info(`Running Server..`)
-  }
+export default class ExpressApp {
+    async loadServer() {
+        await DatabaseInstance.loadDatabase()
+        console.log(`Running Server..`)
+    }
 }
 
-module.exports = ExpressApp
